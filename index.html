@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR Informática</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'UnifrakturCook', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/black-linen.png');
+      background-color: #1a1a1a;
+      color: #d3d3d3;
+    }
+    header {
+      background-color: rgba(18, 18, 18, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid #444;
+    }
+    .logo img {
+      height: 60px;
+      filter: brightness(1.1) contrast(1.2);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      position: relative;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #111;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+      border: 1px solid #333;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 0.75rem 1rem;
+      white-space: nowrap;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.65);
+      border-radius: 12px;
+      box-shadow: 0 0 15px #000;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #bbb;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #555;
+      padding-bottom: 0.5rem;
+      color: #d8d8d8;
+    }
+    ul {
+      list-style: square inside;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      border-top: 2px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo MR Informática">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li class="dropdown">
+          <a href="#">Downloads</a>
+          <div class="dropdown-content">
+            <a href="https://anydesk.com/pt/downloads" target="_blank">Anydesk</a>
+            <a href="https://www.teamviewer.com/pt-br/download/windows/" target="_blank">TeamViewer</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo à MR Informática</h1>
+    <p>Soluções completas em manutenção, redes, câmeras e suporte técnico. Atendemos com agilidade e confiança.</p>
+  </section>
+
+  <section id="servicos" class="services">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Manutenção de computadores, notebooks e iMacs</li>
+      <li>Instalação e configuração de impressoras</li>
+      <li>Instalação de câmeras Intelbras</li>
+      <li>Montagem e organização de infraestrutura de rede</li>
+      <li>Formatação, upgrades e suporte remoto</li>
+    </ul>
+  </section>
+
+  <section id="sobre" class="about">
+    <h2>Sobre Nós</h2>
+    <p>A MR Informática é uma empresa especializada em soluções de tecnologia com atendimento dedicado e personalizado. Trabalhamos com excelência em manutenção, redes e segurança eletrônica, oferecendo confiança e agilidade em cada serviço.</p>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Contato</h2>
+    <ul>
+      <li><strong>WhatsApp:</strong> <a href="https://wa.me/SEUNUMERO" target="_blank">Clique aqui para conversar</a></li>
+      <li><strong>Email:</strong> contato@mrinformatica.com</li>
+      <li><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo, SP</li>
+    </ul>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14640.196721932948!2d-46.5258909!3d-23.5391406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e1dc7a366c3%3A0x38612c580713f908!2sM.R%20-%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1712910000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MR Informática. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
